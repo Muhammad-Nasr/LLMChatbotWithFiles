@@ -1,5 +1,5 @@
 import streamlit as st  # Library for building web apps
-#from dotenv import load_dotenv  # Library for loading environment variables
+from dotenv import load_dotenv  # Library for loading environment variables
 from helper import (
     get_api_key,
     process_files,
@@ -15,7 +15,7 @@ def main():
     """
     Main function to set up the Streamlit app and handle user interactions.
     """
-    #load_dotenv()  # Load environment variables from .env file
+    load_dotenv()  # Load environment variables from .env file
 
     st.set_page_config(
         page_title="Chat with multiple Files", page_icon=":books:"
