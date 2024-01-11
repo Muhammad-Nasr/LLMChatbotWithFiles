@@ -18,7 +18,7 @@ def main():
     load_dotenv()  # Load environment variables from .env file
 
     st.set_page_config(
-        page_title="Chat with multiple Files", page_icon=":books:"
+        page_title="BotChat with multiple Files", page_icon=":books:"
     )  # Set page title and icon
 
     # Display initial information and instructions
@@ -44,7 +44,7 @@ def main():
         st.session_state.has_file = False  # Flag indicating if files are uploaded
 
     # Display chat header
-    st.header("Chat with Your Files :books:")
+    st.header("LLMBot Chat with Your Files :books:")
 
     # Display existing chat messages
     for message in st.session_state.messages:
